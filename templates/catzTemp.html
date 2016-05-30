@@ -1,0 +1,6 @@
+<h1>Catz!</h1>
+
+<div class="allCats" ng-repeat="cat in allCats">
+    <a ng-click="getCat()" ui-sref="cat({catId: cat.breed})" href="#/catz/Abyssinian">
+      <h2>{{cat.breed}}</h2><img src="{{cat.image}}"></a>
+  </div>
